@@ -1,0 +1,110 @@
+html,body{
+    text-align: center;
+    min-width: 100%;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+    position: relative;
+    display: inline-block;
+    font-size: 24px;
+}
+.container{
+    display: grid;
+    /*grid-template-columns: 55% 45%;*/
+    grid-gap: 10px;
+    position: relative;
+    max-width: 50%;
+    margin: auto;
+}
+
+.st0
+{
+    fill: #2FAA9F;
+    fill-opacity: 1;
+    stroke: #ebebeb;
+    stroke-opacity: 1;
+    stroke-width:0.5;
+    stroke-miterlimit: 3.97446823;
+    stroke-dasharray: none;
+}
+
+#flag>img{
+    width: 100%;
+    margin: auto;
+}
+
+p,img{
+    animation: fade-in 3s forwards;
+}
+p{
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#wojewodztwo-title,#daily-title {
+    display: inline-grid;
+    padding: 10px;
+    margin: 10px;
+    border: solid 2px;
+    animation: fade-in 3.5s forwards;
+}
+
+@keyframes fade-in{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body,html{
+        max-width: 90%;
+        overflow-x: hidden;
+    }
+    .container{
+        display: inline-block;
+        max-width: 90%;
+    }
+
+    .map{
+        display: inline-block;
+        margin: auto;
+        width: 90%;
+        padding: 10px;
+        border: none;
+    }
+
+    #flag,#capital,#currency{
+        display: inline-block;
+        width: 90%;
+        margin: auto;
+        padding: 10px;
+    }
+    #currency,#flag{
+        border-top: none;
+    }
+}
+
+.statistics-content h3 {
+    font-size: 2em;
+
+}
+
+.data-info {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding-top: 50px;
+    font-size: 12px;
+}
+
+.data-info span {
+    float: left;
+}
+
+.data-info #lastUpdate {
+    float: left;
+    padding-left: 15px;
+}
